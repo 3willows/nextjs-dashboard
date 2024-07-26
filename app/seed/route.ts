@@ -102,17 +102,18 @@ async function seedRevenue() {
 }
 
 export async function GET() {
-  try {
-    await client.sql`BEGIN`
-    await seedUsers()
-    await seedCustomers()
-    await seedInvoices()
-    await seedRevenue()
-    await client.sql`COMMIT`
+  // try {
+    return Response.json({ message: "Already seeded, don't repeat" })
+  //   await client.sql`BEGIN`
+  //   await seedUsers()
+  //   await seedCustomers()
+  //   await seedInvoices()
+  //   await seedRevenue()
+  //   await client.sql`COMMIT`
 
-    return Response.json({ message: "Database seeded successfully" })
-  } catch (error) {
-    await client.sql`ROLLBACK`
-    return Response.json({ error }, { status: 500 })
-  }
+  //   return Response.json({ message: "Database seeded successfully" })
+  // } catch (error) {
+  //   await client.sql`ROLLBACK`
+  //   return Response.json({ error }, { status: 500 })
+  // }
 }
