@@ -8,4 +8,4 @@ TO DO:
 
 - Challenge at the bottom of [Ch.14](https://nextjs.org/learn/dashboard-app/improving-accessibility)
 
-- In Ch.15, when told to use ```.env```, use ```.env.local``` instead.
+- In Ch.15, when told to use ```.env```, use ```.env.local``` instead.  Also need to run ```vercel env add AUTH_SECRET``` to push the AUTH_SECRET to the deployed version.
