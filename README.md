@@ -7,3 +7,5 @@ For more information, see the [course curriculum](https://nextjs.org/learn) on t
 TO DO:
 
 - Challenge at the bottom of [Ch.14](https://nextjs.org/learn/dashboard-app/improving-accessibility)
+
+- In Ch.15, when told to use ```.env```, use ```.env.local``` instead.
